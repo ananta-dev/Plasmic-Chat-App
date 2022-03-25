@@ -20,18 +20,18 @@ import {
 } from "@plasmicapp/react-web";
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_chat_app.module.css"; // plasmic-import: fvjeJAc2KXTwtdHurp6o8v/projectcss
-import sty from "./PlasmicTextInput.module.css"; // plasmic-import: A0Od_rnAuEc/css
+import sty from "./PlasmicTextInputNew.module.css"; // plasmic-import: A0Od_rnAuEc/css
 import SearchsvgIcon from "./icons/PlasmicIcon__Searchsvg"; // plasmic-import: _0y9ZwO--_0/icon
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: d86Ip4QoqeG/icon
 
-export const PlasmicTextInput__VariantProps = new Array(
+export const PlasmicTextInputNew__VariantProps = new Array(
   "showStartIcon",
   "showEndIcon",
   "isDisabled",
   "color"
 );
 
-export const PlasmicTextInput__ArgProps = new Array(
+export const PlasmicTextInputNew__ArgProps = new Array(
   "placeholder",
   "endIcon",
   "startIcon",
@@ -43,7 +43,7 @@ export const PlasmicTextInput__ArgProps = new Array(
   "type"
 );
 
-function PlasmicTextInput__RenderFunc(props) {
+function PlasmicTextInputNew__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
   const [isRootFocusVisibleWithin, triggerRootFocusVisibleWithinProps] =
     useTrigger("useFocusVisibleWithin", {
@@ -219,7 +219,7 @@ function PlasmicTextInput__RenderFunc(props) {
 
 function useBehavior(props, ref) {
   return pp.useTextInput(
-    PlasmicTextInput,
+    PlasmicTextInputNew,
     props,
     {
       showStartIconVariant: {
@@ -251,11 +251,11 @@ function makeNodeComponent(nodeName) {
     const { variants, args, overrides } = deriveRenderOpts(props, {
       name: nodeName,
       descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicTextInput__ArgProps,
-      internalVariantPropNames: PlasmicTextInput__VariantProps
+      internalArgPropNames: PlasmicTextInputNew__ArgProps,
+      internalVariantPropNames: PlasmicTextInputNew__VariantProps
     });
 
-    return PlasmicTextInput__RenderFunc({
+    return PlasmicTextInputNew__RenderFunc({
       variants,
       args,
       overrides,
@@ -263,27 +263,27 @@ function makeNodeComponent(nodeName) {
     });
   };
   if (nodeName === "root") {
-    func.displayName = "PlasmicTextInput";
+    func.displayName = "PlasmicTextInputNew";
   } else {
-    func.displayName = `PlasmicTextInput.${nodeName}`;
+    func.displayName = `PlasmicTextInputNew.${nodeName}`;
   }
   return func;
 }
 
-export const PlasmicTextInput = Object.assign(
-  // Top-level PlasmicTextInput renders the root element
+export const PlasmicTextInputNew = Object.assign(
+  // Top-level PlasmicTextInputNew renders the root element
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
     startIconContainer: makeNodeComponent("startIconContainer"),
     input: makeNodeComponent("input"),
     endIconContainer: makeNodeComponent("endIconContainer"),
-    // Metadata about props expected for PlasmicTextInput
-    internalVariantProps: PlasmicTextInput__VariantProps,
-    internalArgProps: PlasmicTextInput__ArgProps,
+    // Metadata about props expected for PlasmicTextInputNew
+    internalVariantProps: PlasmicTextInputNew__VariantProps,
+    internalArgProps: PlasmicTextInputNew__ArgProps,
     useBehavior
   }
 );
 
-export default PlasmicTextInput;
+export default PlasmicTextInputNew;
 /* prettier-ignore-end */

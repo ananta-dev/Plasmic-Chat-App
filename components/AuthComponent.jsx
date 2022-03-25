@@ -30,6 +30,7 @@ function AuthComponent_(props, ref) {
                     setAuthError(null);
                     try {
                         let authFunction = null;
+                        console.log("props.isSignUpFlow: ", props.isSignUpFlow);
                         if (props.isSignUpFlow) {
                             console.log("calling supabase signUp");
                             authFunction = await supabase.auth.signUp({
@@ -44,7 +45,6 @@ function AuthComponent_(props, ref) {
                             });
                         }
 
-                        // const { error } = authFunction();
                         const { error } = authFunction;
                         if (error) {
                             setAuthError(error);

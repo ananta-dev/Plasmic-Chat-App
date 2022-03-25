@@ -16,13 +16,13 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
-import TextInput from "../../TextInput"; // plasmic-import: PFykLD_dz5y/component
+import TextInput from "../../TextInput"; // plasmic-import: A0Od_rnAuEc/component
 import Button from "../../Button"; // plasmic-import: 3OB9jeYB3LR/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_chat_app.module.css"; // plasmic-import: fvjeJAc2KXTwtdHurp6o8v/projectcss
 import sty from "./PlasmicAuthComponent.module.css"; // plasmic-import: IBqAoAJpzd/css
 
-export const PlasmicAuthComponent__VariantProps = new Array("isSignupFlow");
+export const PlasmicAuthComponent__VariantProps = new Array("isSignUpFlow");
 
 export const PlasmicAuthComponent__ArgProps = new Array();
 
@@ -59,6 +59,7 @@ function PlasmicAuthComponent__RenderFunc(props) {
         data-plasmic-name={"emailInput"}
         data-plasmic-override={overrides.emailInput}
         className={classNames("__wab_instance", sty.emailInput)}
+        placeholder={"Enter your email"}
         type={"text"}
       />
 
@@ -66,13 +67,17 @@ function PlasmicAuthComponent__RenderFunc(props) {
         data-plasmic-name={"passwordInput"}
         data-plasmic-override={overrides.passwordInput}
         className={classNames("__wab_instance", sty.passwordInput, {
-          [sty.passwordInputisSignupFlow]: hasVariant(
+          [sty.passwordInputisSignUpFlow]: hasVariant(
             variants,
-            "isSignupFlow",
-            "isSignupFlow"
+            "isSignUpFlow",
+            "isSignUpFlow"
           )
         })}
-        placeholder={"Enter your password"}
+        placeholder={
+          hasVariant(variants, "isSignUpFlow", "isSignUpFlow")
+            ? "Enter your password"
+            : "Enter your password"
+        }
         type={"password"}
       />
 
@@ -80,10 +85,10 @@ function PlasmicAuthComponent__RenderFunc(props) {
         data-plasmic-name={"submitButton"}
         data-plasmic-override={overrides.submitButton}
         className={classNames("__wab_instance", sty.submitButton, {
-          [sty.submitButtonisSignupFlow]: hasVariant(
+          [sty.submitButtonisSignUpFlow]: hasVariant(
             variants,
-            "isSignupFlow",
-            "isSignupFlow"
+            "isSignUpFlow",
+            "isSignUpFlow"
           )
         })}
         color={"green"}
@@ -94,15 +99,15 @@ function PlasmicAuthComponent__RenderFunc(props) {
             projectcss.__wab_text,
             sty.text__eVjTh,
             {
-              [sty.textisSignupFlow__eVjThs6HjS]: hasVariant(
+              [sty.textisSignUpFlow__eVjThs6HjS]: hasVariant(
                 variants,
-                "isSignupFlow",
-                "isSignupFlow"
+                "isSignUpFlow",
+                "isSignUpFlow"
               )
             }
           )}
         >
-          {hasVariant(variants, "isSignupFlow", "isSignupFlow")
+          {hasVariant(variants, "isSignUpFlow", "isSignUpFlow")
             ? "Sign Up"
             : "Login"}
         </div>
@@ -119,15 +124,15 @@ function PlasmicAuthComponent__RenderFunc(props) {
             projectcss.__wab_text,
             sty.text__zre37,
             {
-              [sty.textisSignupFlow__zre37S6HjS]: hasVariant(
+              [sty.textisSignUpFlow__zre37S6HjS]: hasVariant(
                 variants,
-                "isSignupFlow",
-                "isSignupFlow"
+                "isSignUpFlow",
+                "isSignUpFlow"
               )
             }
           )}
         >
-          {hasVariant(variants, "isSignupFlow", "isSignupFlow")
+          {hasVariant(variants, "isSignUpFlow", "isSignUpFlow")
             ? "Already have an account?"
             : "Don't have an account?"}
         </div>
@@ -136,20 +141,20 @@ function PlasmicAuthComponent__RenderFunc(props) {
           data-plasmic-name={"button"}
           data-plasmic-override={overrides.button}
           className={classNames("__wab_instance", sty.button, {
-            [sty.buttonisSignupFlow]: hasVariant(
+            [sty.buttonisSignUpFlow]: hasVariant(
               variants,
-              "isSignupFlow",
-              "isSignupFlow"
+              "isSignUpFlow",
+              "isSignUpFlow"
             )
           })}
           color={"link"}
           link={
-            hasVariant(variants, "isSignupFlow", "isSignupFlow")
+            hasVariant(variants, "isSignUpFlow", "isSignUpFlow")
               ? "/login"
               : "/signup"
           }
         >
-          {hasVariant(variants, "isSignupFlow", "isSignupFlow")
+          {hasVariant(variants, "isSignUpFlow", "isSignUpFlow")
             ? "Login Here"
             : "Sign Up Here"}
         </Button>

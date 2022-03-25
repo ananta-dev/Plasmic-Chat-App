@@ -57,7 +57,7 @@ function PlasmicSignup__RenderFunc(props) {
             data-plasmic-name={"authComponent"}
             data-plasmic-override={overrides.authComponent}
             className={classNames("__wab_instance", sty.authComponent)}
-            isSignupFlow={true}
+            isSignUpFlow={true}
           />
         </div>
       </div>
