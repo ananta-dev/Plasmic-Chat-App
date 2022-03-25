@@ -1,0 +1,119 @@
+.root {
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  width: 480px;
+  height: auto;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 24px;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: calc(0px - 16px);
+  height: calc(100% + 16px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.root > :global(.__wab_flex-container) > picture > img,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-top: 16px;
+}
+.text__nIBm {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  font-size: 32px;
+  font-weight: 600;
+}
+.emailInput:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.svg__hfuEx {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg__iPfC0 {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.passwordInput:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.svg__irYt7 {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg__nq2JH {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.submitButton:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+.svg__wa6Kr {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.text__eVjTh {
+  color: #ededec;
+}
+.svg__quqNy {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.freeBox {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.text__zre37 {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+}
+.button:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  align-self: auto;
+}
+.svg__ujfd4 {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg__zR7SL {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
