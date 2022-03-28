@@ -1,0 +1,152 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 1046px;
+  max-width: 100%;
+  position: relative;
+  background: none;
+  min-width: 0;
+  padding: 0px;
+}
+.header {
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  background: #ececec;
+  min-width: 0;
+  padding: 8px;
+}
+.header > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  margin-left: calc(0px - 16px);
+  width: calc(100% + 16px);
+}
+.header > :global(.__wab_flex-container) > *,
+.header > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.header > :global(.__wab_flex-container) > picture > img,
+.header
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 16px;
+}
+.roomAvatar:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.text {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.body {
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  background: url("/plasmic/chat_app/images/whatsAppBackgroundjpg.jpeg") top 50% left 50% / cover repeat;
+  overflow: auto;
+  min-width: 0;
+  min-height: 0;
+  padding: 32px 8px 8px;
+}
+.body > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  min-height: 0;
+  margin-top: calc(0px - 32px);
+  height: calc(100% + 32px);
+}
+.body > :global(.__wab_flex-container) > *,
+.body > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.body > :global(.__wab_flex-container) > picture > img,
+.body > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-top: 32px;
+}
+.chatMessage__svUdN:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.chatMessage__naF6Z:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.chatMessage__i7Ty3:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.footer {
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.footer > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.footer > :global(.__wab_flex-container) > *,
+.footer > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.footer > :global(.__wab_flex-container) > picture > img,
+.footer
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.messageTextInput:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.svg__twi4F {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg__wjFzH {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.sendIcon {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.sendIcon > picture > img {
+  object-fit: cover;
+}
+.sendIcon > .__wab_img-spacer > img {
+  object-fit: cover;
+}

@@ -2,9 +2,11 @@
 // This file is owned by you, feel free to edit as you see fit.
 import * as React from "react";
 import { PlasmicSignup } from "../components/plasmic/chat_app/PlasmicSignup";
+import enforceUnAuth from "../utils/enforceUnAuth";
 
 function Signup() {
     return <PlasmicSignup />;
 }
 
+export const getServerSideProps = enforceUnAuth();
 export default Signup;

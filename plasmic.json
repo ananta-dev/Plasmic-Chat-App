@@ -120,6 +120,149 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "text-input"
+        },
+        {
+          "id": "ilwT19qNd1",
+          "name": "Layout",
+          "type": "managed",
+          "projectId": "fvjeJAc2KXTwtdHurp6o8v",
+          "renderModuleFilePath": "plasmic/chat_app/PlasmicLayout.jsx",
+          "importSpec": {
+            "modulePath": "Layout.jsx"
+          },
+          "cssFilePath": "plasmic/chat_app/PlasmicLayout.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "WsIksv38QI",
+          "name": "Sidebar",
+          "type": "managed",
+          "projectId": "fvjeJAc2KXTwtdHurp6o8v",
+          "renderModuleFilePath": "plasmic/chat_app/PlasmicSidebar.jsx",
+          "importSpec": {
+            "modulePath": "Sidebar.jsx"
+          },
+          "cssFilePath": "plasmic/chat_app/PlasmicSidebar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "ZvWObp4tOu",
+          "name": "Chat",
+          "type": "managed",
+          "projectId": "fvjeJAc2KXTwtdHurp6o8v",
+          "renderModuleFilePath": "plasmic/chat_app/PlasmicChat.jsx",
+          "importSpec": {
+            "modulePath": "Chat.jsx"
+          },
+          "cssFilePath": "plasmic/chat_app/PlasmicChat.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "z8VugZWSJM",
+          "name": "Avatar",
+          "type": "managed",
+          "projectId": "fvjeJAc2KXTwtdHurp6o8v",
+          "renderModuleFilePath": "plasmic/chat_app/PlasmicAvatar.jsx",
+          "importSpec": {
+            "modulePath": "Avatar.jsx"
+          },
+          "cssFilePath": "plasmic/chat_app/PlasmicAvatar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "x_jq9Sex4p",
+          "name": "ChatListItem",
+          "type": "managed",
+          "projectId": "fvjeJAc2KXTwtdHurp6o8v",
+          "renderModuleFilePath": "plasmic/chat_app/PlasmicChatListItem.jsx",
+          "importSpec": {
+            "modulePath": "ChatListItem.jsx"
+          },
+          "cssFilePath": "plasmic/chat_app/PlasmicChatListItem.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "aTcSUSTpWN",
+          "name": "ChatList",
+          "type": "managed",
+          "projectId": "fvjeJAc2KXTwtdHurp6o8v",
+          "renderModuleFilePath": "plasmic/chat_app/PlasmicChatList.jsx",
+          "importSpec": {
+            "modulePath": "ChatList.jsx"
+          },
+          "cssFilePath": "plasmic/chat_app/PlasmicChatList.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "67lO5l62AF",
+          "name": "ChatMessage",
+          "type": "managed",
+          "projectId": "fvjeJAc2KXTwtdHurp6o8v",
+          "renderModuleFilePath": "plasmic/chat_app/PlasmicChatMessage.jsx",
+          "importSpec": {
+            "modulePath": "ChatMessage.jsx"
+          },
+          "cssFilePath": "plasmic/chat_app/PlasmicChatMessage.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "Z8_MciQ7hY",
+          "name": "ChatRoom",
+          "type": "managed",
+          "projectId": "fvjeJAc2KXTwtdHurp6o8v",
+          "renderModuleFilePath": "plasmic/chat_app/PlasmicChatRoom.jsx",
+          "importSpec": {
+            "modulePath": "../pages/room/[roomId].jsx"
+          },
+          "cssFilePath": "plasmic/chat_app/PlasmicChatRoom.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "WM8ODpYCMr",
+          "name": "Profile",
+          "type": "managed",
+          "projectId": "fvjeJAc2KXTwtdHurp6o8v",
+          "renderModuleFilePath": "plasmic/chat_app/PlasmicProfile.jsx",
+          "importSpec": {
+            "modulePath": "../pages/profile.jsx"
+          },
+          "cssFilePath": "plasmic/chat_app/PlasmicProfile.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "byu1aSvPCP",
+          "name": "UploadAvatar",
+          "type": "managed",
+          "projectId": "fvjeJAc2KXTwtdHurp6o8v",
+          "renderModuleFilePath": "plasmic/chat_app/PlasmicUploadAvatar.jsx",
+          "importSpec": {
+            "modulePath": "UploadAvatar.jsx"
+          },
+          "cssFilePath": "plasmic/chat_app/PlasmicUploadAvatar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "_ktPJwy9s9n",
+          "name": "UserProfile",
+          "type": "managed",
+          "projectId": "fvjeJAc2KXTwtdHurp6o8v",
+          "renderModuleFilePath": "plasmic/chat_app/PlasmicUserProfile.jsx",
+          "importSpec": {
+            "modulePath": "UserProfile.jsx"
+          },
+          "cssFilePath": "plasmic/chat_app/PlasmicUserProfile.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -147,6 +290,16 @@
           "id": "_0y9ZwO--_0",
           "name": "SearchsvgIcon",
           "moduleFilePath": "plasmic/chat_app/icons/PlasmicIcon__Searchsvg.jsx"
+        },
+        {
+          "id": "xuvXrm0ju",
+          "name": "DualRing1S200PxsvgIcon",
+          "moduleFilePath": "plasmic/chat_app/icons/PlasmicIcon__DualRing1S200Pxsvg.jsx"
+        },
+        {
+          "id": "YM0hHWtVyU",
+          "name": "LogoutSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/chat_app/icons/PlasmicIcon__LogoutSvgrepoComsvg.jsx"
         }
       ],
       "images": [
@@ -154,6 +307,16 @@
           "id": "5-IuEOi_V0xb1",
           "name": "image.png",
           "filePath": "../public/plasmic/chat_app/images/imagepng.jpeg"
+        },
+        {
+          "id": "e0tY4eNvj",
+          "name": "send.png",
+          "filePath": "../public/plasmic/chat_app/images/sendpng.png"
+        },
+        {
+          "id": "LLjS-GRNr",
+          "name": "WhatsApp-Background.jpg",
+          "filePath": "../public/plasmic/chat_app/images/whatsAppBackgroundjpg.jpeg"
         }
       ],
       "indirect": false,

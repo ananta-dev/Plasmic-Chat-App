@@ -1,16 +1,17 @@
 .root {
   flex-direction: column;
   display: flex;
-  position: relative;
   width: 480px;
   height: auto;
+  max-width: 100%;
   background: #ffffff;
+  position: relative;
   border-radius: 10px;
-  padding: 24px;
+  padding: 8px;
 }
 .root > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-top: calc(0px - 16px);
   height: calc(100% + 16px);
@@ -21,138 +22,111 @@
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-top: 16px;
 }
-.text__nIBm {
+.text__m5 {
   position: relative;
   width: auto;
   height: auto;
   max-width: 800px;
   font-size: 32px;
-  font-weight: 600;
-}
-.freeBox__fiQku {
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  min-width: 0;
-  display: none;
-}
-.freeBoxisError__fiQkuOpeD5 {
-  display: flex;
-}
-.freeBox__euHrR {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  display: flex;
-  flex-direction: row;
-  min-width: 0;
-}
-.slotTargetErrorMessage {
-  color: #e41616;
-}
-.emailInput:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-}
-.svg__hf3O {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
-}
-.svg__li5F {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
-}
-.passwordInput:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-}
-.svg__r5OO9 {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
-}
-.svg__ez2Z {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
-}
-.submitButton:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-  width: 100%;
-  min-width: 0;
-}
-.svg__wa6Kr {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
-}
-.text__eVjTh {
-  color: #ededec;
-}
-.svg__quqNy {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
-}
-.svg {
-  position: relative;
-  object-fit: cover;
-  max-width: 100%;
-  width: 48px;
-  height: 48px;
+  font-weight: 500;
   color: var(--token-OeZHjrCUF);
-  flex-shrink: 0;
-  display: none;
 }
-.svgisLoading {
-  display: block;
-}
-.freeBox__fqBuj {
-  display: flex;
+.uploadAvatar:global(.__wab_instance) {
+  max-width: 100%;
   position: relative;
-  flex-direction: column;
+}
+.firstNameInput:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.svg__eEilO {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg__udIeh {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.lastNameInput:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.svg__ioeia {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg__ccv4E {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.saveProfileButton:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+.svg__rmkJl {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.text__oj3On {
+  color: #000000;
+}
+.svg___2AngT {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.button:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.svg__nwqqJ {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg__udIRq {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.freeBox___9TwDy {
+  position: relative;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: auto;
   max-width: 100%;
   min-width: 0;
+  display: none;
   padding: 8px;
 }
-.text__zre37 {
+.freeBoxisError___9TwDyU6YVt {
+  display: flex;
+}
+.freeBox___2GApt {
   position: relative;
   width: auto;
   height: auto;
   max-width: 800px;
+  display: flex;
+  flex-direction: row;
 }
-.button:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-  align-self: auto;
-}
-.svg__ujfd4 {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
-}
-.svg__zR7SL {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
+.slotTargetErrorMessage {
+  color: #d41f1f;
 }

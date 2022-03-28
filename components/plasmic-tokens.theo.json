@@ -11,9 +11,39 @@
       }
     },
     {
+      "name": "UnnamedStyleToken",
+      "type": "color",
+      "value": "#893D3D",
+      "category": "color",
+      "meta": {
+        "projectId": "fvjeJAc2KXTwtdHurp6o8v",
+        "id": "8-M_q3J-Z"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 2",
+      "type": "color",
+      "value": "#893D3D",
+      "category": "color",
+      "meta": {
+        "projectId": "fvjeJAc2KXTwtdHurp6o8v",
+        "id": "SOPE0cjIn"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 3",
+      "type": "color",
+      "value": "#30A46C",
+      "category": "color",
+      "meta": {
+        "projectId": "fvjeJAc2KXTwtdHurp6o8v",
+        "id": "YE87cc68_"
+      }
+    },
+    {
       "name": "primary",
       "type": "color",
-      "value": "#59E3FC",
+      "value": "#30A46C",
       "category": "color",
       "meta": {
         "projectId": "fvjeJAc2KXTwtdHurp6o8v",

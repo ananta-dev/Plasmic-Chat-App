@@ -164,7 +164,9 @@ function PlasmicTextInput__RenderFunc(props) {
         }
         name={args.name}
         placeholder={
-          args.placeholder !== undefined ? args.placeholder : "Enter something…"
+          args.placeholder !== undefined
+            ? args.placeholder
+            : "Enter your last name"
         }
         type={args.type}
         value={args.value}
