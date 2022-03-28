@@ -19,8 +19,6 @@ function UploadAvatar_({ onUpload, ...props }, ref) {
 
             const file = e.target.files[0];
             const fileExt = file.name.split(".").pop();
-            console.log("file: ", file);
-            console.log("fileExt: ", fileExt);
             const fileName = `${Math.random()}.${fileExt}`;
             const filePath = `${fileName}`;
 
