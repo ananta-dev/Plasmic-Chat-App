@@ -2,6 +2,16 @@ import "../styles/globals.css";
 import { PlasmicRootProvider } from "@plasmicapp/react-web";
 import { supabase } from "../utils/supabaseClient";
 import { useEffect } from "react";
+import { QueryClientProvider, QueryClient } from "react-query";
+
+const queryClient = new QueryClient({
+    defaultOptions: {
+        queries: {
+            retry: 0,
+            refetchOnWindowFocus: false,
+        },
+    },
+});
 
 function MyApp({ Component, pageProps }) {
     // Step 1. subscribe to onAuthStateChange
@@ -35,7 +45,9 @@ function MyApp({ Component, pageProps }) {
 
     return (
         <PlasmicRootProvider>
-            <Component {...pageProps} />
+            <QueryClientProvider client={queryClient}>
+                <Component {...pageProps} />
+            </QueryClientProvider>
         </PlasmicRootProvider>
     );
 }
