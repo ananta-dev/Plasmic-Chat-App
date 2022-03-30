@@ -3,14 +3,27 @@
 import * as React from "react";
 import { PlasmicSidebar } from "./plasmic/chat_app/PlasmicSidebar";
 import { useRouter } from "next/router";
+import { supabase } from "../utils/supabaseClient";
+import { useGetUserProfile } from "../lib/supabase/profiles";
 
 function Sidebar_(props, ref) {
     const router = useRouter();
+    const user = supabase.auth.user();
+
+    const { data: userProfile } = useGetUserProfile(user?.id);
 
     return (
         <PlasmicSidebar
             root={{ ref }}
             {...props}
+            userAvatar={{
+                prefixText: (
+                    userProfile?.first_name && userProfile?.first_name[0] || user?.email[0],
+                ),
+                isEmpty: !userProfile?.avatar_url,
+                imageUrl: userProfile?.avatar_url,
+            }}
+            username={"ABCDEF"}
             headerProfile={{
                 onClick: () => {
                     router.push("/profile");

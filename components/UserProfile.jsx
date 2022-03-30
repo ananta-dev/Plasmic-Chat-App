@@ -30,10 +30,9 @@ function UserProfile_({ ...props }, ref) {
             {...props}
             uploadAvatar={{
                 url: userProfile?.avatar_url,
+                //prettier-ignore
                 onUpload: async url => {
-                    await updateUserProfileMutation.mutateAsync({
-                        avatar_url: url,
-                    });
+                    await updateUserProfileMutation.mutateAsync({avatar_url: url});
                 },
                 loading:
                     userProfileLoading || updateUserProfileMutation.isLoading,
@@ -46,12 +45,10 @@ function UserProfile_({ ...props }, ref) {
                 value: lastName,
                 onChange: e => setLastName(e.target.value),
             }}
-            updateProfileButton={{
+            saveProfileButton={{
+                //prettier-ignore
                 onClick: async () => {
-                    await updateUserProfileMutation.mutateAsync({
-                        first_name: firstName,
-                        last_name: lastName,
-                    });
+                    await updateUserProfileMutation.mutateAsync({first_name: firstName, last_name: lastName});
                     router.replace("/");
                 },
             }}
